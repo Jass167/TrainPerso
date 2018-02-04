@@ -7,16 +7,16 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="back">
   <form (submit)="doSignup()">
-    <ion-list>
+    <ion-list >
 
-      <ion-item>
-        <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
+      <ion-item class="my-menu">
+        <ion-label fixed >{{ 'NAME' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item class="my-menu">
         <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
@@ -30,7 +30,7 @@
       </ion-item>
       -->
 
-      <ion-item>
+      <ion-item class="my-menu">
         <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
